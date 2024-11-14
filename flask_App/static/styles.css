@@ -1,0 +1,138 @@
+/* Body Styling */
+body {
+    background-image: url('back.png'); /* Ensure the correct path to the image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for depth */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift the container slightly on hover */
+}
+
+/* Headings */
+h1 {
+    font-size: 2.8em;
+    text-align: center;
+    color: #FF7F00;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+    font-size: 1.15em;
+    display: block;
+    color: #444;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: calc(100% - 24px);
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #FF7F00;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #FF9500;
+    box-shadow: 0 4px 8px rgba(255, 127, 0, 0.2);
+    outline: none;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #FF7F00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #FF9500;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Go Back Button */
+.go-back-button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    font-weight: 700;
+    background-color: #FF7F00;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.go-back-button:hover {
+    background-color: #FF9500;
+    transform: translateY(-2px);
+}
+
+.go-back-button:active {
+    transform: translateY(1px);
+}
+
+/* Result Styling */
+.result-title {
+    font-size: 2.4em;
+    text-align: center;
+    color: #FF7F00;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.result {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
