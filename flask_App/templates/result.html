@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="result-title">Prediction Result</h1>
+        <div class="result">
+            <p>Your predicted solar yield is: <strong>{{ prediction }}</strong></p>
+            <p>(Units: kWh)</p> <!-- Add units here -->
+        </div>
+        <div class="button-container">
+            <a href="{{ url_for('index') }}" class="go-back-button">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>

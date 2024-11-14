@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Yield Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Solar Yield Prediction</h1>
+        <p>Enter the following details (units in brackets):</p>
+        <form method="POST" action="/predict">
+            <label for="dc_power">DC Power (W):</label>
+            <input type="text" id="dc_power" name="DC_POWER" required>
+            
+            <label for="ac_power">AC Power (W):</label>
+            <input type="text" id="ac_power" name="AC_POWER" required>
+            
+            <label for="daily_yield">Daily Yield (kWh):</label>
+            <input type="text" id="daily_yield" name="DAILY_YIELD" required>
+            
+            <label for="ambient_temp">Ambient Temperature (°C):</label>
+            <input type="text" id="ambient_temp" name="AMBIENT_TEMPERATURE" required>
+            
+            <label for="module_temp">Module Temperature (°C):</label>
+            <input type="text" id="module_temp" name="MODULE_TEMPERATURE" required>
+            
+            <label for="irradiation">Irradiation (W/m²):</label>
+            <input type="text" id="irradiation" name="IRRADIATION" required>
+            
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
